@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"embed"
-	"tiger-go/internal/aws/cognito"
-	"tiger-go/internal/aws/config"
+	cognito "tiger-go/internal/tiger-aws/tiger-cognito"
+	tigerconfig "tiger-go/internal/tiger-aws/tiger-config"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -16,7 +16,7 @@ import (
 var assets embed.FS
 
 func main() {
-	cfg, err := config.LoadDefaultConfig()
+	cfg, err := tigerconfig.LoadDefaultConfig()
 	if err != nil {
 		println("Error loading AWS config:", err.Error())
 		return
@@ -42,6 +42,7 @@ func main() {
 		},
 		BackgroundColour: &options.RGBA{R: 27, G: 38, B: 54, A: 1},
 		OnStartup: func(ctx context.Context) {
+			app.startup(ctx)
 			runtime.LogInfo(ctx, "Application started")
 		},
 		Bind: []interface{}{
