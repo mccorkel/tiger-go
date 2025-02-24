@@ -76,7 +76,10 @@ require (
 	golang.org/x/sys v0.30.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
 )
-~~~
+
+## AWS SDK Dependencies
+- aws-sdk-go-v2: v1.25.2
+- aws-sdk-go-v2/config: v1.27.4
 
 ## Notes
 - Project is running on MacOS (Apple Silicon)
