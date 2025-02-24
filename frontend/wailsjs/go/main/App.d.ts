@@ -4,6 +4,20 @@ import {cognito} from '../models';
 
 export function CompleteNewPassword(arg1:string):Promise<cognito.CognitoAuthResponse>;
 
+export function CreateParticipantToken(arg1:string):Promise<Record<string, any>>;
+
+export function GetPreviewFrame():Promise<Record<string, any>>;
+
+export function GetStageInfo():Promise<Record<string, any>>;
+
 export function Greet(arg1:string):Promise<string>;
 
 export function SignIn(arg1:string,arg2:string):Promise<cognito.CognitoAuthResponse>;
+
+export function StartScreenCapture():Promise<Record<string, any>>;
+
+export function StartStreaming(arg1:string):Promise<Record<string, any>>;
+
+export function StartWebcamCapture():Promise<Record<string, any>>;
+
+export function StopStreaming():Promise<Record<string, any>>;

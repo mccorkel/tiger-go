@@ -190,6 +190,11 @@ func (a *App) StartWebcamCapture() (map[string]interface{}, error) {
 		return nil, fmt.Errorf("failed to get user media: %w", err)
 	}
 
+	runtime.LogInfof(a.ctx, "Media stream created with %d tracks", len(mediaStream.GetTracks()))
+	for i, track := range mediaStream.GetTracks() {
+		runtime.LogInfof(a.ctx, "Track %d: ID=%s, Kind=%s", i, track.ID(), track.Kind())
+	}
+
 	a.mediaStream = mediaStream
 
 	return map[string]interface{}{
@@ -260,6 +265,11 @@ func (a *App) StartScreenCapture() (map[string]interface{}, error) {
 	})
 	if err != nil {
 		return nil, fmt.Errorf("failed to get display media: %w", err)
+	}
+
+	runtime.LogInfof(a.ctx, "Screen capture media stream created with %d tracks", len(mediaStream.GetTracks()))
+	for i, track := range mediaStream.GetTracks() {
+		runtime.LogInfof(a.ctx, "Screen track %d: ID=%s, Kind=%s", i, track.ID(), track.Kind())
 	}
 
 	a.mediaStream = mediaStream

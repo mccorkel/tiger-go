@@ -6,10 +6,38 @@ export function CompleteNewPassword(arg1) {
   return window['go']['main']['App']['CompleteNewPassword'](arg1);
 }
 
+export function CreateParticipantToken(arg1) {
+  return window['go']['main']['App']['CreateParticipantToken'](arg1);
+}
+
+export function GetPreviewFrame() {
+  return window['go']['main']['App']['GetPreviewFrame']();
+}
+
+export function GetStageInfo() {
+  return window['go']['main']['App']['GetStageInfo']();
+}
+
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
 }
 
 export function SignIn(arg1, arg2) {
   return window['go']['main']['App']['SignIn'](arg1, arg2);
+}
+
+export function StartScreenCapture() {
+  return window['go']['main']['App']['StartScreenCapture']();
+}
+
+export function StartStreaming(arg1) {
+  return window['go']['main']['App']['StartStreaming'](arg1);
+}
+
+export function StartWebcamCapture() {
+  return window['go']['main']['App']['StartWebcamCapture']();
+}
+
+export function StopStreaming() {
+  return window['go']['main']['App']['StopStreaming']();
 }

@@ -16,14 +16,37 @@
   });
 </script>
 
-<div style="position: fixed; bottom: 0; right: 0; background: #eee; padding: 5px; font-size: 12px;">
-  Store state: isAuthenticated: {authState?.isAuthenticated}, requiresNewPassword: {authState?.requiresNewPassword}
-  <br>
-  <button on:click={() => {
-    authState = { ...authState, requiresNewPassword: true, isAuthenticated: false };
-    auth.update(state => ({...state, requiresNewPassword: true, isAuthenticated: false}));
-  }}>Force Password Change Screen</button>
-</div>
+<style>
+  /* Improve log panel contrast */
+  :global(.wails-log) {
+    color: #000 !important; /* Black text for maximum contrast */
+    background-color: #f5f5f5 !important;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  :global(.wails-log-entry) {
+    margin-bottom: 5px;
+    color: #000 !important;
+  }
+
+  /* Add specific styles for different log levels */
+  :global(.wails-log-error) {
+    color: #d32f2f !important; /* Red for errors */
+    font-weight: bold;
+  }
+
+  :global(.wails-log-warning) {
+    color: #f57c00 !important; /* Orange for warnings */
+  }
+
+  :global(.wails-log-info) {
+    color: #0277bd !important; /* Blue for info */
+  }
+</style>
 
 {#if authState?.isAuthenticated}
   <Dashboard />

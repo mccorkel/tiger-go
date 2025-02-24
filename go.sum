@@ -39,12 +39,6 @@ github.com/gen2brain/malgo v0.11.23 h1:3/VAI8DP9/Wyx1CUDNlUQJVdWUvGErhjHDqYcHVk9
 github.com/gen2brain/malgo v0.11.23/go.mod h1:f9TtuN7DVrXMiV/yIceMeWpvanyVzJQMlBecJFVMxww=
 github.com/gen2brain/shm v0.1.0 h1:MwPeg+zJQXN0RM9o+HqaSFypNoNEcNpeoGp0BTSx2YY=
 github.com/gen2brain/shm v0.1.0/go.mod h1:UgIcVtvmOu+aCJpqJX7GOtiN7X2ct+TKLg4RTxwPIUA=
-github.com/gen2brain/x264-go v0.3.1 h1:XFi6y8HM5BCMrP4kR/o711iBU++XNfLOY3PG8Alz2kU=
-github.com/gen2brain/x264-go v0.3.1/go.mod h1:+Z4VKXQrUKzbfEv36GyiyjXfixmOp2c820ugsMthW18=
-github.com/gen2brain/x264-go/x264c v0.0.0-20241022182000-732e1bdb7da2 h1:aS40m/Q+6z0ID7EVegxnnw3lWHUceGbg0zucbo7335I=
-github.com/gen2brain/x264-go/x264c v0.0.0-20241022182000-732e1bdb7da2/go.mod h1:r2t0/BO5YgPRwWQpLYO5iB5FLSj1ArTQc/zmAoAV7sQ=
-github.com/gen2brain/x264-go/yuv v0.0.0-20221204084822-82ee2951dea2 h1:lihaRUKRj94EWVZRp1jTmEiIxmvjEiSb9fJl2xftrXY=
-github.com/gen2brain/x264-go/yuv v0.0.0-20221204084822-82ee2951dea2/go.mod h1:PzzJntdOaVt4Gc37fNaEXpqmhKkUgd/xqyPMUfx+FQc=
 github.com/go-ole/go-ole v1.3.0 h1:Dt6ye7+vXGIKZ7Xtk4s6/xVdGDQynvom7xCFEdWr6uE=
 github.com/go-ole/go-ole v1.3.0/go.mod h1:5LS6F96DhAwUc7C+1HLexzMXY1xGRSryjyPPKW6zv78=
 github.com/godbus/dbus/v5 v5.1.0 h1:4KLkAxT3aOY8Li4FRJe/KvhoNFFxo0m6fNuFUO8QJUk=

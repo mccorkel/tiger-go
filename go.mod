@@ -8,7 +8,6 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.49.5
 	github.com/aws/aws-sdk-go-v2/service/ivsrealtime v1.21.9
 	github.com/pion/mediadevices v0.7.1
-	github.com/pion/mediadevices/pkg/codec/x264 v0.0.0-20240208122732-b1c3c1ce59b6
 	github.com/pion/webrtc/v3 v3.3.5
 	github.com/wailsapp/wails/v2 v2.10.1
 )
