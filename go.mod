@@ -5,6 +5,7 @@ go 1.23
 require (
 	github.com/aws/aws-sdk-go-v2 v1.36.2
 	github.com/aws/aws-sdk-go-v2/config v1.29.7
+	github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider v1.49.5
 	github.com/wailsapp/wails/v2 v2.10.1
 )
 

@@ -30,4 +30,11 @@ When changes are needed:
 1. Request permission
 2. Show the exact changes
 3. Wait for approval
-4. Document changes in versions.md 
+4. Document changes in versions.md
+
+## Version Documentation
+When adding or updating packages:
+1. All changes must be documented in versions.md
+2. Include package name and version
+3. Update both Frontend and Backend Dependencies sections as needed
+4. Add relevant notes about the change 

@@ -28,13 +28,19 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
-    "@tsconfig/svelte": "^5.0.0",
+    "@tsconfig/svelte": "^3.0.0",
     "svelte": "^3.49.0",
     "svelte-check": "^2.8.0",
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
-    "typescript": "^4.6.4",
+    "typescript": "^4.9.5",
     "vite": "^3.0.7"
+  },
+  "dependencies": {
+    "@smui/button": "^6.1.4",
+    "@smui/card": "^6.1.4",
+    "@smui/textfield": "^6.1.4",
+    "@smui/top-app-bar": "^6.1.4"
   }
 }
 ~~~
@@ -78,14 +84,16 @@ require (
 )
 
 ## AWS SDK Dependencies
-- aws-sdk-go-v2: v1.25.2
-- aws-sdk-go-v2/config: v1.27.4
+- aws-sdk-go-v2: v1.36.2
+- aws-sdk-go-v2/config: v1.29.7
+- aws-sdk-go-v2/service/cognitoidentityprovider: v1.30.4
 
 ## Notes
 - Project is running on MacOS (Apple Silicon)
 - Using pre-release version of Go 1.23.4
 - Using development version of Wails v2.10.1
-- Frontend built with Svelte 3.49.0
-- Updated @tsconfig/svelte from ^3.0.0 to ^5.0.0 to fix TypeScript configuration warnings
+- Frontend uses Svelte 3.49.0 with compatible SMUI v6.1.4
+- TypeScript configuration uses @tsconfig/svelte v3 for stability
+- Added AWS Cognito Identity Provider package for authentication
 
 Last updated: March 2024 
